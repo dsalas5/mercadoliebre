@@ -1,0 +1,325 @@
+
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+    --main-font:'Roboto',sans-serif;
+    --font-size-first: 12px;
+    --font-size-second: 16px;
+    --font-size-third: 18px;
+    --font-size-titles:24px;
+    --product-img-width:100%;
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+header{
+    background-color:var(--amarillo);
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header div.logo{
+    width: 50%;
+    padding: 10px;
+}
+h2 {
+    font-size: 24px;
+    color: #666;
+    margin: 20px 0px;
+}
+div .top-header{
+    padding: 5%;
+    display: flex;
+    display:wrap;
+    justify-content: space-between;
+    align-items:center;
+    width:100%;
+}
+div .top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+header .form{
+    
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+    width:50%
+    
+
+}
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    border-radius: 2%;
+    outline: none;
+    color: #666;
+    padding: 5px;
+    width: 300 px;
+}
+
+
+header .form .submit {
+    
+    background-color: #FFF;
+    border-radius: 20%;
+    border: 1px solid #000;
+    color:#666;
+    
+    padding: 7px;
+    
+    
+}
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+.margin{
+    padding: 5px;
+    
+}
+
+.burguer-menu{
+    text-align: center;
+}
+.burguer-menu  i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+body{
+    background-color:#ebebeb;
+    font-family: var(--main-font);
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+.compra{
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.banner{
+    display: flex;
+    width: 100%;
+    background-color:#ebebeb;
+}
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+.product-price{
+    font-size: 18px;
+    width: 30%
+}
+.product-image{
+    width: 100%;
+}
+main section article i{
+    display:block;
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position:absolute;
+    right: 20px;
+    top: -15px;
+    transition-duration: 2s;
+}
+main section article i:hover{
+    transform: rotate(-90deg);
+    
+}
+.product-discount{
+    font-size: 16px;
+    font-weight: normal;
+    color: #39b54a;
+    width: 70%;
+}
+
+.product-name{
+    display:block;
+    font-size: 18px;
+    font-weight: normal;
+    color: #666;
+    margin-top: 20px;
+    
+}
+
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+footer{
+    text-align: center;
+}
+.footer-sections{
+    display:flex;
+}
+footer i{
+    font-size:2em;
+    color:blue;
+}
+
+footer section{
+    margin: 50px;
+}
+h5{
+    font-size:var(--font-size-titles);
+}
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.login-button{
+    transition-duration: 1s;
+}
+.login-button:hover{
+    background-color:#0022AA;
+}
+.create-form{
+    padding:20px 15px;
+
+}
+.control-formulario{
+    margin-bottom: 15px;
+}
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display:block;
+}
+.botn-formulario{
+    background-color: #39b54a;
+    border:none;
+    font-size:28px;
+    color:#ffff
+}
+@media (min-width: 425px){
+     nav{
+        display: none;
+    }
+    .top-header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+ 
+    }
+   
+
+
+@media (min-width:768px ){
+     .top-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .compra{
+        
+        text-align:center;
+    }
+    .burguer-menu{
+        display:none;
+    }
+    nav{
+        display:flex;
+        justify-content:space-between;
+    }
+    nav ul {
+        display:flex;
+        
+    }
+    nav ul li{
+        margin: 0 15px;
+    }
+    .articles-1{
+        display: flex;
+        
+    }
+    .articles-2{
+        display:flex;
+    }
+    main section article{
+        margin: 15px ;
+    }
+    .h3{
+        display: block;
+    }
+}
+@media (min-width:1024px ){
+    .full-articles{
+        display:flex;
+    }
+    .product-discount{
+        font-size: 12px;
+        padding-left: 30px;
+    }
+    header .form{
+    padding-left:1px;
+    position: relative;
+    left:275px;
+}
+.banner{
+    width:100%;
+    
+}
+header nav {
+    font-size:18px;
+}
+.product-name{
+    display: none;
+
+}
+main section article:hover .product-name{
+    display: block;
+}
+}
