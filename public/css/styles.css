@@ -75,7 +75,7 @@ header .form{
     
 
 }
-header .form .input{
+header .form .input-buscador{
     background-color: #FFF;
     border: 1px solid #000;
     border-radius: 2%;
@@ -83,6 +83,7 @@ header .form .input{
     color: #666;
     padding: 5px;
     width: 300 px;
+    height:100%;
 }
 
 
@@ -204,9 +205,7 @@ article div.main-article{
 footer{
     text-align: center;
 }
-.footer-sections{
-    display:flex;
-}
+
 footer i{
     font-size:2em;
     color:blue;
@@ -239,6 +238,9 @@ main section article:hover{
     font-style: italic;
     display:block;
 }
+.input{
+    width: 100%;
+}
 .botn-formulario{
     background-color: #39b54a;
     border:none;
@@ -253,10 +255,11 @@ main section article:hover{
         display: flex;
         flex-wrap: wrap;
     }
- 
+    .input{
+        width: 100%;
     }
    
-
+}
 
 @media (min-width:768px ){
      .top-header{
@@ -267,12 +270,15 @@ main section article:hover{
         
         text-align:center;
     }
-    .burguer-menu{
-        display:none;
+    .input{
+        width: 50%;
     }
     nav{
         display:flex;
         justify-content:space-between;
+    }
+    .burguer-menu{
+        display:block;
     }
     nav ul {
         display:flex;
@@ -294,10 +300,19 @@ main section article:hover{
     .h3{
         display: block;
     }
+    .footer-sections{
+        display:flex;
+    }
 }
 @media (min-width:1024px ){
     .full-articles{
         display:flex;
+    }
+    .input{
+        width: 30%;
+    }
+    .burguer-menu{
+        display:none;
     }
     .product-discount{
         font-size: 12px;
@@ -307,19 +322,19 @@ main section article:hover{
     padding-left:1px;
     position: relative;
     left:275px;
-}
+    }
 .banner{
     width:100%;
     
-}
+    }
 header nav {
     font-size:18px;
-}
+    }
 .product-name{
     display: none;
 
-}
+    }
 main section article:hover .product-name{
     display: block;
-}
+    }
 }

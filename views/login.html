@@ -18,10 +18,10 @@
                     <div class="logo"> 
                     <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
                     </div>
-                     <div class="form" action="#" method="GET">
-                        <div> <input type="text" name="buscador" placeholder="Buscar productos,marcas y más" class="input"></div>
+                     <form class="form" action="#" method="GET">
+                        <div> <input type="text" name="buscador" placeholder="Buscar productos,marcas y más" class="input-buscador"></div>
                     <div class="submit"><i class="fa fa-search"></i></div>
-                     </div>
+                     </form>
                 
                 <p class= "compra"> <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             </div> 
@@ -30,12 +30,12 @@
             <form action="/inicio-usuario" method="post" class="create-form">
                 
                 <div class="control-formulario">
-                    <label> Nombre de Usuari@: </label>    
-                    <input type= "text" name="nombre-usuario" >              
+                       
+                    <input type= "text" name="nombre-usuario" placeholder="Nombre de Usuario" class="input" >              
                 </div>
                 <div class="control-formulario">
-                    <label> Contraseña:</label>    
-                    <input type= "password" name="password" > 
+                       
+                    <input type= "password" name="password" placeholder="Contraseña" class="input"> 
                 </div>
                 <div>
                        
@@ -43,6 +43,9 @@
                 </div>
                
             </form>
+            <section class= "burguer-menu">
+                <i class= "fas fa-bars"></i>
+            </section>
 
         </main>
         <footer class= "footer">

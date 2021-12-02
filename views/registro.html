@@ -18,10 +18,10 @@
                     <div class="logo"> 
                     <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre" width="100%">
                     </div>
-                     <div class="form" action="#" method="GET">
-                        <div> <input type="text" name="buscador" placeholder="Buscar productos,marcas y más" class="input"></div>
+                     <form class="form" action="#" method="GET">
+                        <div> <input type="text" name="buscador" placeholder="Buscar productos,marcas y más" class="input-buscador"></div>
                     <div class="submit"><i class="fa fa-search"></i></div>
-                     </div>
+                     </form>
                 
                 <p class= "compra"> <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             </div> 
@@ -29,15 +29,15 @@
         <main >
             <form action="/resgistro-usuario" method="post" class="create-form">
                 <div class="control-formulario">
-                    <label> Nombre y Apellido: </label>    
-                    <input type= "text" name="nombre">              
+                      
+                    <input type= "text" name="nombre" placeholder="Nombre y Apellido">              
                 </div>
                 <div class="control-formulario">
-                    <label> Nombre de Usuari@: </label>    
-                    <input type= "text" name="nombre-usuario">              
+                       
+                    <input type= "text" name="nombre-usuario" placeholder="Nombre de Usuario">              
                 </div>
                 <div class="control-formulario">
-                    <label> Fecha de Nacimiento: </label>    
+                     
                     <input type= "date" name="fecha-nacimiento" value= "12-01-1996" min= "01-01-1940">              
                 </div>
                 <div class="control-formulario">
