@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "node": "^17.1.0"
+    "node": "^17.1.0",
+    "node.js": "0.0.1-security"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
@@ -24,5 +25,6 @@
     "url": "https://github.com/dsalas5/mercadoliebre/issues"
   },
   "homepage": "https://github.com/dsalas5/mercadoliebre#readme",
+  "keywords": [],
   "description": ""
 }
